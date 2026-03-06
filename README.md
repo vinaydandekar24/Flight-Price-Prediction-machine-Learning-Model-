@@ -1,60 +1,213 @@
-# End-to-End Machine Learning using AWS SageMaker Course
+✈️ Flight Prediction ML Model
+📌 Project Overview
 
-Welcome to the AWS SageMaker End-to-End Machine Learning Course conducted in partnership with CampusX! 🚀
+The Flight Prediction ML Model is an end-to-end machine learning project designed to predict flight ticket prices based on different travel parameters such as airline, source, destination, duration, stops, and travel date.
 
-This comprehensive course is designed to take you through the entire workflow of implementing a machine learning project using AWS SageMaker. Whether you're a beginner or an experienced practitioner, these 6 sessions will provide you with theoretical and practical knowledge as well as hands-on experience to build, deploy, and manage machine learning models on the cloud.
+The goal of this project is to demonstrate the complete machine learning workflow, including data preprocessing, exploratory data analysis, feature engineering, model training, and deployment.
 
-## Relevant Links
-- [Course](https://learnwith.campusx.in/courses/Flight-Price-Prediction-using-AWS-Sagemaker-660db0499ecb7050edff6e77)
-- [Web Application](https://sagemaker-flight-prices-prediction-5yfn7cnnpxta2k23jvf4ic.streamlit.app/)
-- [Course Instructor](https://www.linkedin.com/in/mohammed-misbahullah-sheriff/)
+This project helps users estimate flight prices in advance and understand how various factors influence airfare.
 
-## Course Overview
+🚀 Project Workflow
 
-- **Session 1: Introduction to AWS SageMaker**
-  - Overview of SageMaker, S3, EC2 & IAM features and capabilities
-  - Setting up AWS environment and SageMaker instance
+The project follows a structured machine learning pipeline:
 
-- **Session 2: GitHub Setup & Data Cleaning**
-  - Setting up local & remote repository using GitHub
-  - Data Cleaning using Numpy and Pandas best practices
+1️⃣ Data Collection
 
-- **Session 3: Exploratory Data Analysis**
-  - Understanding the workflow of systematically analyzing datasets
-  - Understanding the various plots, statistical measures and hypothesis tests to analyze datasets
+Flight travel data containing information such as:
 
-- **Session 4: Exploratory Data Analysis (continued)**
-  - Exploring a custom EDA module for convenience and significantly reduce complexity of analyzing datasets
-  - Performing in-depth analysis of various kinds of numeric, categorical and date-time variables
-  - Leveraging statistical measures, hypothesis tests, and univariate, bivariate and multivariate plots
+Airline
 
-- **Session 5: Feature Engineering and Data Preprocessing**
-  - Understanding feature engineering teachniques for different types of variables
-  - Creating scikit-learn compatible custom classes and functions
-  - Using advanced scikit-learn features for feature engineering and data preprocessing such as:
-     - Pipeline
-     - Feature Union
-     - Function Transformer
-     - Column Transformer
+Source city
 
-- **Session 6: Model Training and Deployment**
-  - Training and Tuning a machine learning model on SageMaker
-  - Using S3 buckets for storage and EC2 for computing purposes
-  - Creating a web application from scratch and deploying over cloud using Streamlit
+Destination city
 
-## Prerequisites
+Date of journey
 
-- Familiarity with Python programming language
-- Basic understanding of machine learning concepts
+Departure time
 
-## Getting Started
+Arrival time
 
-To get started with the course, simply clone this repository and follow along with the course sessions and materials provided in each session's directory.
+Duration
 
-```bash
-git clone https://github.com/MisbahullahSheriff/sagemaker-flight-prices-prediction.git
-```
+Total stops
 
-Happy learning! 🌟
+Additional flight information
+
+Ticket price
+
+2️⃣ Data Cleaning
+
+Raw data often contains inconsistencies. During this step:
+
+Missing values are handled
+
+Date and time fields are converted into useful numerical features
+
+Unnecessary columns are removed
+
+Data types are corrected
+
+Libraries used:
+
+Pandas
+
+NumPy
+
+3️⃣ Exploratory Data Analysis (EDA)
+
+EDA helps understand the dataset and identify patterns.
+
+Some analysis includes:
+
+Distribution of flight prices
+
+Price comparison between airlines
+
+Effect of stops on ticket price
+
+Influence of travel duration on price
+
+Relationship between source and destination routes
+
+Visualization tools used:
+
+Matplotlib
+
+Seaborn
+
+4️⃣ Feature Engineering
+
+Important features are extracted from existing data to improve model performance.
+
+Examples:
+
+Extracting day and month from journey date
+
+Converting departure and arrival times into hours and minutes
+
+Transforming categorical variables using encoding techniques
+
+Handling multi-stop flight information
+
+5️⃣ Data Preprocessing
+
+Machine learning models require numerical input. Therefore:
+
+Categorical variables are encoded
+
+Feature scaling is applied where necessary
+
+Data is split into training and testing sets
+
+6️⃣ Model Training
+
+Several machine learning models can be used to train the dataset and predict flight prices.
+
+Typical models include:
+
+Random Forest Regressor
+
+Decision Tree Regressor
+
+XGBoost Regressor
+
+Linear Regression
+
+The model with the best performance is selected based on evaluation metrics.
+
+7️⃣ Model Evaluation
+
+Model performance is evaluated using regression metrics such as:
+
+Mean Absolute Error (MAE)
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+These metrics help determine how accurately the model predicts flight prices.
+
+8️⃣ Model Deployment
+
+After training, the final model is saved and integrated into a web application.
+
+The web interface allows users to:
+
+Input flight details
+
+Predict ticket prices instantly
+
+The application is built using Streamlit for an interactive user experience.
+
+🛠️ Technologies Used
+
+Programming Language
+
+Python
+
+Libraries
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+XGBoost
+
+Matplotlib
+
+Seaborn
+
+Pickle
+
+Tools & Platforms
+
+Git & GitHub
+
+Streamlit
+
+Jupyter Notebook
+
+VS Code / Python Environment
+
 <br>
-Hope you enjoy the course 😊
+## 📊 Learning Outcomes
+
+Through this project you will understand:
+
+Real-world machine learning pipeline
+
+Data preprocessing techniques
+
+Feature engineering methods
+
+Model selection and evaluation
+
+Deployment of ML models in web applications
+
+<br>
+
+## 📌 Future Improvements
+
+Possible improvements for the project:
+
+Integration with real-time flight datasets
+
+Advanced deep learning models
+
+Improved feature engineering
+
+Deployment using cloud platforms
+
+Enhanced user interface
+
+<br>
+
+## 👨‍💻 Author
+
+Vinay Dandekar
+
+Machine Learning and Data Science Enthusiast interested in building practical AI solutions and predictive models.
